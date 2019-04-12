@@ -1,0 +1,33 @@
+<div class="login-main">
+    <div class="container">
+        <mat-grid-list cols="2" rowHeight="1:1">
+            <mat-grid-tile class="left-grid">
+                <div class="left-detail-warp">
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile><form (ngSubmit)="onSubmit()" class="form" #form="ngForm">
+                <img class="form__element form__element--logo" src="/assets/img/logo.png" alt="Qopius">
+                <h2 class="title">Login Module<sup>®</sup></h2>
+                <h3 class="sub-title">Login to System</h3>
+                <mat-form-field class="form__element" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Login" type="text" name="login" [(ngModel)]="loginForm.login" required>
+                </mat-form-field>
+        
+                <mat-form-field class="form__element" [hideRequiredMarker]="false">
+                  <input matInput placeholder="Password" type="password" name="pass" [(ngModel)]="loginForm.pass" required>
+                </mat-form-field>
+        
+                <div class="form__element buttons">
+                  <button class="buttons--element change-pwd" mat-button color="primary" type="button">Change Password</button>
+                  <div class="action-btn">
+                      <a class="buttons--element cancle-btn" mat-flat-button mat-button color="accent" href="https://platform.qopius.com/production/">Cancel</a>
+                      <button class="buttons--element" mat-raised-button color="primary" type="submit" [disabled]="!form.form.valid">
+                        Login
+                      </button>
+                  </div>
+                </div>
+              </form></mat-grid-tile>
+      
+      </mat-grid-list>
+  </div>
+</div>

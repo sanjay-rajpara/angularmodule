@@ -1,0 +1,76 @@
+// .container {
+//   position: absolute;
+//   width: 30%;
+//   top: 40%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width:72%;
+  &__element {
+    margin-top:0px;
+    margin-bottom:0px;
+    &--logo {
+      width:190px;
+      align-self:left;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  &--element {
+    margin-left: 5px;
+    &__decoration {
+      text-decoration: none;
+    }
+  }
+}
+
+.title {
+  color:#707070;
+  margin:  0 0; 
+  font-size:52px;
+  line-height: 30px;
+  padding-bottom: 20%;
+}
+.sub-title{font-size:49px; font-weight: 700; color:#000; margin: 12px 0 20px 0;}
+.login-main{ background-color: #fff;
+  background-position: -130px center;
+  .left-grid{background: url(../../../assets/img/qopius-bg.png) no-repeat;    background-position: -305px top;background-size: contain;
+    @media screen and (min-width:1200px) and (max-width:1500px) {
+      background-position:-170px top;
+      background-size: contain;
+    }
+  
+  
+  }
+  .icon-dashboard{display: inline-block;
+    img{width:78px; height:78px; object-fit:cover}
+  }
+  .left-detail-warp{max-width: 50%; margin: 0 auto; text-align: center;    margin-right: 50%;
+    @media screen and (min-width:1200px) and (max-width:1500px) {
+      margin-right:47%;
+      p{font-size: 16px!important;}
+    }
+    p{font-size: 18px; font-weight: 400; color: #000; line-height:28px;
+    }
+  }
+}
+  
+.form__element.buttons{display: inline;text-align: right;
+  .change-pwd{padding: 0 20px;}
+
+  .action-btn{text-align: left;margin-top: 15px;
+    .cancle-btn{background:#e4e4e4; color:#2b73ff;}
+    .cancle-btn{margin-left: 0px; margin-right:15px;}
+  }
+
+}
+
+.buttons--element{font-size: 20px; font-weight: 700; border-radius: 5px;line-height: 50px;padding: 0 57px;}
